@@ -1,4 +1,4 @@
-void printHighscores(const int& highScore[3],const char& highScoreInitials[3][3]) {
+void printHighscores() {
 	char initials[3];
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
@@ -16,12 +16,13 @@ void printHighscores(const int& highScore[3],const char& highScoreInitials[3][3]
 			lcd.print(00000000,BIN) //print arrow right
 		}
 		
-		while(i == 1) {
+		while(i > 0) {
 		if (digitalRead(7)) break;
 		}
 		
 	}
 	
+	lcd.clear();
 	
 	
 	
